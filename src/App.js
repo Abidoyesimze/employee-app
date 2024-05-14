@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import User from "./components/User/user";
+import Admin from "./components/Admin/admin";
+import Adding from "./components/Adding/Add";
+import Intro from "./components/Intro/intro";
+import ReactDatePicker from "./components/Date/datePicker";
+import ShowClock from "./components/Intro/Clock/clock";
+import "./App.css";
+import Edit from "./components/Edit/edit";
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+       <Intro />
+      <ShowClock />
+      <ReactDatePicker />
+      <User />
+      <Admin />
+      <Adding />
+      <Edit />
+
+      
+      
+        
     </div>
   );
 }
